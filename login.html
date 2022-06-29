@@ -1,36 +1,9 @@
 <html>
-    <head>
-        <title> Login form </title>
     <body>
-        <form>
-            <center>
-            <table border="0" cellspacing = "12"> 
-                <h1> Log in </h1>
-                <tr align = "center">
-                    <td> </td>
-                    <td> <input type = "text" name = " " placeholder = "Username" required>
-                    </td>
-                </tr>
-                <tr align = "center">
-                    <td> </td>
-                    <td> <input type = "text" name = " " placeholder = "Password" required>
-                    </td>
-                </tr>
-                <tr align = "center">
-                    <td> </td>
-                    <td> <button type = "submit" name = " " required>Log in
-                    </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td> <input type = "checkbox" id = "check" required>Remember Me
-                        <a href = 'forgotten password.html'>Forgot Password?</a><br>
-                        <center><a href = ' '>Create an Account</a></center>
-                    </td>
-                </tr>
-            </table>
-        </center>
+        <form action="loginsubmit" method="post">
+            username<input type = "text" name="username">
+            password<input type = "password" name ="password">
+            submit<input type="submit" name="submit">
         </form>
     </body>
-    </head>
 </html>

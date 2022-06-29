@@ -1,0 +1,9 @@
+a5afd9ac99041a0759bdfb134d346113
+api key
+
+api request
+https://api.themoviedb.org/3/movie/550?api_key=a5afd9ac99041a0759bdfb134d346113
+
+api key in weatherstack
+1e4251a458657f146c06091c1ab39a49
+

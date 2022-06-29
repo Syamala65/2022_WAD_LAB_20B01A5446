@@ -3,7 +3,7 @@
         <title> Student Registration form </title>
     </head>
     <body>
-        <form action="registration" method="post">
+        <form action="studentregistraionsubmit" method="post">
             <center>
             <table border="0" cellspacing = "12"> 
                 <h1> Student Registration form </h1>
@@ -18,20 +18,25 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> Father Name </td>
-                    <td> <input type = "text" name = "FatherName" placeholder = "Enter your Father Name" required>
+                    <td> FatherName </td>
+                    <td> <input type = "text" name = "Fathername" placeholder = "Enter your Father Name" required>
                     </td>
                 </tr>
                 <tr>
                     <td> Gender </td>
-                    <td> <input type = "radio" name = "gender" value = "Male" required>Male
+                    <td> <input type = "radio" name = "gender" required>Male
                     </td>
                 </tr>
                 <tr>
-                    <td  class = "tdLabel" name="branch">
+                    <td> Date of Birth </td>
+                    <td> <input type = "date" name = "DateofBirth" placeholder = "DD / MM / YYYY" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td  class = "tdLabel" >
                         <label for = "Branch" name = "branch" class = "label">Branch</label>
                     </td> 
-                    <td> <select name = "Branch" id = "">
+                    <td> <select name = "branch" id = "">
                             <option value = "-1">Select Branch</option>
                             <option value = "CSE">CSE</option>
                             <option value = "IT">IT</option>
@@ -51,8 +56,8 @@
                 </tr>
                 <tr align="center"> 
                     <td colspan="2">
-                        <input type = "submit" value = "submit" name = " submit" value = "Submit">
-        
+                        <input type = "submit" value = "submit" name = "submit" value = "Submit">
+                        <input type = "Reset" value = "Reset" name = "submit" value = "Reset">
                     </td>
                 </tr>
             </table>
