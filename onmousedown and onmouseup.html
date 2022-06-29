@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function OnButtonDown (button) {
+            button.style.color = "green";
+        }
+        function OnButtonUp (button) {
+            button.style.color = "purple";
+        }
+    </script>
+    </head>
+    <body>
+        Click on the following button and see its text color.
+         <br />
+        <button onmousedown="OnButtonDown (this)" onmouseup="OnButtonUp (this)">Test button</button>
+    </body>\
+</html>

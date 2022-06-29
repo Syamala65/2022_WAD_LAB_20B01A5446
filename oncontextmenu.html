@@ -1,0 +1,32 @@
+<html>
+  <head>
+   <title>Demo on oncontextmenu</title>
+  </head>
+  <style>
+    .context {
+      border: 1px solid black;
+      background: green;
+            width: 200px;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+ 
+  <body>
+    <div class="context">
+       <p>Click right mouse button</p>
+    </div>
+    <script>
+     
+      document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+ 
+      const contextMenu = document.querySelector(".context");
+      contextMenu.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        contextMenu.textContent = "GeeksForGeeks";
+      });
+    </script>
+  </body>
+</html>

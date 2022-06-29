@@ -1,0 +1,33 @@
+<html> 
+<head>
+    <title>
+        HTML DOM onmouseenter Event
+    </title>
+</head>
+<body>
+    <center>
+        <h1 id="demo">
+          GeeksforGeeks
+      </h1>
+        <h2>
+          HTML DOM onmouseleave Event
+      </h2>
+    </center>
+    <script>
+        document.getElementById(
+          "demo").addEventListener(
+          "mouseenter", enter);
+        document.getElementById(
+          "demo").addEventListener(
+          "mouseleave", leave);
+        function enter() {
+            document.getElementById(
+              "demo").style.color = "yellow";
+        }
+        function leave() {
+            document.getElementById(
+              "demo").style.color = "green";
+        }
+    </script> 
+</body> 
+</html>

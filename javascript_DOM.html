@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Demo on HTML DOM</title>
+    <script type="text/javascript">
+        function change(){
+            var element = document.getElementById("ai");
+            alert(element.innerHTML);
+            element.innerHTML = "Dept of Artificial Intelligence";
+            var element1 = document.getElementsByClassName("Result");
+            element1[1].innerHTML = "Results will be updated soon<br>";
+            var element2 = document.getElementsByTagName("h2");
+            element2[0].innerHTML += " of II-II";
+            element2[0].align="center";
+            document.getElementById("ai").style.color="blue";
+        }
+        function changedata(ele){
+            ele.innerHTML = "II-II Results";
+        }
+    </script>
+
+</head>
+<body>
+    <h1 id="ai" onclick="this.innerHTML= 'Dept of CSE'"> Dept of AI</h1>
+    <p>Welcome to WAD Class</p>
+    <h2 class = "Result" align = "left" onclick="changedata(this)">Results</h2>
+    <span class="Result"></span>
+    <input type="button" value="Change Dept Name" onclick="change()">
+</body>
+</html>
